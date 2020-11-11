@@ -1,0 +1,93 @@
+/* --- Estilo aplicado a todas las páginas del proyecto --- */
+
+body {
+    background:lightblue url(../img/fondo.jpg) fixed center;
+    /* Fuente del fondo: https://www.pexels.com/photo/abstract-art-artistic-background-1103970/ */
+}
+
+#cuerpo {
+    background: rgba(233, 236, 239, 0.8);
+}
+
+#pie {
+    background: rgba(23, 162, 184, 0.5);
+}
+
+.elipsis {
+    max-width: 240px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* Estilo para caja iconos de elementos en contenido.php 
+
+Fuente de la animación: https://codepen.io/avithour/pen/xzNJaV
+*/
+
+.cajaIcono {
+    background: rgba(233, 236, 239, 0.8);
+    max-width: 250px !important;
+    max-height: 160px !important;
+    
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.cajaIcono:hover {
+    background: whitesmoke;
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    animation-name: cajaAnimada;
+    animation-duration: 0.25s;
+    border-left: 4px solid;
+    border-bottom: 2px solid;
+    box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+
+@keyframes cajaAnimada {
+    0%   {border-left: 1px solid;}
+    25%  {border-left: 2px solid;}
+    50%  {border-left: 3px solid; border-bottom: 1px solid;}
+    100% {border-left: 4px solid; border-bottom: 2px solid;}
+}
+
+/* Estilo para verificaciones */
+
+.has-error, .has-error .help-block {
+    color: darkred;
+}
+
+.has-success, .has-success .help-block {
+    color: darkgreen;
+}
+
+/* Estilo para hacer funcionar botón, ver volverArriba.js */
+
+#volverArriba {
+    display: none; /* Oculto por defecto */
+    cursor: default; /* Evita que se marque con manito */
+    border: none; /* Sin bordes, reemplaza estilo de bootstrap */
+    /* Ajustes para fijar en esquina inferior derecha, encima del contenido: */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+}
+
+#volverArriba:hover {
+    background-color: #333; /* Pone fondo oscuro al pasar el cursor */
+}
+
+/* Ocultar textos de ayuda, ver validarClave.js 
+
+Innecesario, da sombra al formulario de la misma clase
+.password-strength {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  }
+*/
+  
+.js-hidden {
+display: none;
+}
