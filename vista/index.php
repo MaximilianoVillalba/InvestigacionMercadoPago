@@ -1,4 +1,4 @@
-<?php $Titulo = "Inicio - FiDrive";
+<?php
 include_once("../vista/estructura/cabecera.php") ?>
 <div class="card p-2 shadow-lg" id=cuerpo>
     <!-- Comienzo div cuerpo-->

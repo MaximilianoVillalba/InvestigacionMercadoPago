@@ -1,4 +1,4 @@
-<?php $Titulo = "Inicio - FiDrive";
+<?php
 include_once("../vista/estructura/cabecera.php") ?>
 <div class="card p-2 shadow-lg" id=cuerpo>
     <!-- Comienzo div cuerpo-->
@@ -48,7 +48,7 @@ include_once("../vista/estructura/cabecera.php") ?>
         </div>
         <div class="row d-flex justify-content-center mt-3">
             <button type="button" class="btn btn-primary" id="btn-carrito">
-                Carrito<span class="badge badge-light ml-2" id="cantidad">0</span>
+                Cargar Carrito<span class="badge badge-light ml-2" id="cantidad">0</span>
             </button>
             <div id="pagar">
 

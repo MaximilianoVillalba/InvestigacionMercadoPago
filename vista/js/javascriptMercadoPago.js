@@ -15,6 +15,13 @@ function agregarProducto(prod, precioProd) {
 
     carritoPrueba.push(registro);
     localStorage.setItem("carritoPrueba", JSON.stringify(carritoPrueba));
+    Swal.fire({
+        position: "center",
+        icon: "success",
+        title: 'Producto cargado',
+        showConfirmButton: false,
+        timer: 1500,
+    })
 }
 
 $("#btn-carrito").click(() => {
@@ -34,7 +41,6 @@ $("#btn-carrito").click(() => {
                     timer: 2500,
                 }).then(() => {
                     window.location = 'carrito.php';
-                    //$('#pagar').html('<script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js" data-preference-id="<?php echo $preference->id; ?>" ></script > ');
                 })
             }
         },

@@ -1,4 +1,4 @@
-<?php $Titulo = "Inicio - FiDrive";
+<?php
 session_start();
 require_once('../extensiones/vendor/autoload.php');
 include_once("../vista/estructura/cabecera.php");
