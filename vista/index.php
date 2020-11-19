@@ -54,21 +54,6 @@ include_once("../vista/estructura/cabecera.php") ?>
                 </tr>
             </tbody>
         </table>
-        <!-- <ul>
-            <li>Listado de archivos con funciones de compartir/modificar/eliminar</li>
-            <li>Íconos mostrados según extensión de archivo o carpeta <small>(aún no lee icono seleccionado por
-                    usuario)</small></li>
-            <li>Crear carpeta y navegar por subcarpetas <small>(no permite cambiar nombre o borrar)</small></li>
-            <li>Animación al pasar cursor por cada caja de icono</li>
-            <li>Botón de "Volver arriba" al navegar por páginas largas <small>(aparece flotando en la esquina inferior
-                    derecha)</small></li>
-            <li>Buscador de palabras en el mismo sitio <small>(integrado a la barra de navegación)</small></li>
-            <li>Plugins de formularios para generar texto enriquecido y validar fortaleza de contraseña</li>
-            <li>Sitio web mayormente responsive y visualmente organizado <small>(excepto detalles para centrar
-                    cajas)</small></li>
-            <li>Navegación en barra superior y mapa del sitio a continuación <small>(Nuevo archivo carga en carpeta
-                    raíz, demás opciones accesibles directamente a modo ilustrativo)</small></li>
-        </ul> -->
     </div>
 </div> <!-- Fin div cuerpo -->
 <?php include_once("../vista/estructura/pie.php"); ?>

@@ -9,9 +9,9 @@ $arregloCarrito = $_SESSION['carritoPrueba'];
 MercadoPago\SDK::setAccessToken('TEST-1391217048471730-072221-9705c9036bbe180579b4c34a61116d59-186471987');
 $preference = new MercadoPago\Preference();
 $preference->back_urls = array(
-    "success" => "https://google.com",
-    "failure" => "https://localhost/PruebaMercadoPago/prueba.php",
-    "pending" => "https://localhost/PruebaMercadoPago/prueba.php"
+    "success" => "http://localhost:8080/InvestigacionMercadoPago/vista/compra_exitosa.php",
+    /* "failure" => "https://localhost/InvestigacionMercadoPago/prueba.php",
+    "pending" => "https://localhost/InvestigacionMercadoPago/prueba.php" */
 );
 $preference->auto_return = "approved";
 
