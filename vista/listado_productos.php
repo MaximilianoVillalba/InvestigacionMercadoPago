@@ -7,9 +7,12 @@ include_once("../vista/estructura/cabecera.php") ?>
         <h1 class="display-4">Trabajo de Investigacion - MercadoPago</h1>
         <hr class="my-2">
         <p class="lead">
+            <strong> Como principal requisito es instalar <a href="https://getcomposer.org/">COMPOSER</a> en nuestra
+                maquina para poder descargar la libreria. </strong>
+            <br>
             El siguiente es un listado de productos generados, en este caso estaticamente, pero si bien se puede pensar
-            generarlos de manera dinamica. La idea del siguiente ejemplo es un listado en el que el cliente puenda
-            agregar tales productos a un carrito "imaginario" para luego poder efectuar la compra
+            generarlos de manera dinamica. La idea del siguiente ejemplo es que el cliente pueda
+            agregar tales productos a un carrito para luego poder efectuar la compra
         </p>
         <hr class="my-2">
 

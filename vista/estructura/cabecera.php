@@ -25,8 +25,6 @@
 
     <!-- Iconos de Font Awesome (usa fuentes web) -->
     <script src="../vista/js/FontAwesome.js" crossorigin="anonymous"></script>
-    <!-- Script para "Buscar en esta página" -->
-    <script src="../vista/js/Buscador.js"></script>
     <!-- Estilo para editar texto enriquecido -->
     <link rel="stylesheet" href="../vista/css/summernote-bs4.min.css">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css">  No me funciona local porque carga fuentes web -->
@@ -34,6 +32,7 @@
 
 <body class="container my-3">
     <?php include_once("../configuracion.php");
+    require_once('../vendor/autoload.php');
     include_once("../vista/estructura/menu.php");
     ?>
     <!-- Fin cabecera -->

@@ -13,18 +13,9 @@
 <script src="../vista/js/sweetalert2/sweetalert2.all.min.js"></script>
 
 <!-- Carga scripts propios -->
-<script src="../vista/js/validaciones.js"></script>
 <script src="../vista/js/javascriptMercadoPago.js"></script>
-<script src="../vista/js/volverArriba.js"></script>
 <button class="btn btn-info shadow-sm" onclick="irArriba()" id="volverArriba" title="Volver arriba"><i
         class="fas fa-chevron-up"></i></button>
-
-<!-- Carga script editor de texto enriquecido (validaciones.js lo carga en idioma español) -->
-<script src="../vista/js/summernote-bs4.min.js"></script>
-<script src="../vista/js/summernote-es-ES.js"></script>
-
-<!-- Carga script para generar hash MD5 -->
-<script src="../vista/js/md5.js"></script>
 </body>
 
 </html>

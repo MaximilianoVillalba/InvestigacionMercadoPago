@@ -1,6 +1,5 @@
 <?php
 session_start();
-require_once('../extensiones/vendor/autoload.php');
 include_once("../vista/estructura/cabecera.php");
 
 $arregloCarrito = $_SESSION['carritoPrueba'];

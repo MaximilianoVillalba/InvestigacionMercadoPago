@@ -14,7 +14,7 @@ function agregarProducto(prod, precioProd) {
     }
 
     carritoPrueba.push(registro);
-    localStorage.setItem("carritoPrueba", JSON.stringify(carritoPrueba));
+    localStorage.setItem("carritoPrueba", JSON.stringify(carritoPrueba)); //Convierte el objeto registro a un JSON para poder setearlo en el localstorage
     Swal.fire({
         position: "center",
         icon: "success",
@@ -25,7 +25,7 @@ function agregarProducto(prod, precioProd) {
 }
 
 $("#btn-carrito").click(() => {
-    let carritoPrueba = JSON.parse(localStorage.getItem("carritoPrueba"));
+    let carritoPrueba = JSON.parse(localStorage.getItem("carritoPrueba"));//Transforma el JSON a objeto javascript
     $.ajax({
         data: { carritoPrueba },
         url: "cargarProductos.php",
@@ -45,7 +45,7 @@ $("#btn-carrito").click(() => {
             }
         },
         error: function (error) {
-            console.log(error);
+
         },
     });
 });
