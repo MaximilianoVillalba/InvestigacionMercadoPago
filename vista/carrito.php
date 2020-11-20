@@ -6,12 +6,14 @@ $arregloCarrito = $_SESSION['carritoPrueba'];
 
 // Agrega credenciales
 MercadoPago\SDK::setAccessToken('TEST-1391217048471730-072221-9705c9036bbe180579b4c34a61116d59-186471987');
+/* Instancio el objeto de mercado pago */
 $preference = new MercadoPago\Preference();
 $preference->back_urls = array(
     "success" => "http://localhost:8080/InvestigacionMercadoPago/vista/compra_exitosa.php",
     /* "failure" => "https://localhost/InvestigacionMercadoPago/prueba.php",
     "pending" => "https://localhost/InvestigacionMercadoPago/prueba.php" */
 );
+/* Preferencia para que al ser aprobado el pago, se retorne automaticamente a la pagina que corresponda */
 $preference->auto_return = "approved";
 
 $items = array();
@@ -57,6 +59,7 @@ $preference->save();
                     <?php } ?>
                 </tbody>
             </table>
+            <!-- Este script es quien invoca el boton de pago con todas sus preferencias anteriormente configuradas -->
             <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
                 data-preference-id="<?php echo $preference->id; ?>">
             </script>

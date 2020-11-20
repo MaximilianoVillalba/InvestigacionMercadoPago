@@ -1,4 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
+    /* Al inicio del DOM pregunta si el item carritoPrueba esta creado en el local o no.
+       En caso que no, la creara
+
+       ***El objeto Storage (API de almacenamiento web) nos permite almacenar datos de manera local en el navegador 
+       y sin necesidad de realizar alguna conexión a una base de datos.****
+    */
     if (!localStorage.getItem("carritoPrueba")) {
         localStorage.setItem("carritoPrueba", "[]");
     }
@@ -7,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 var carritoPrueba = JSON.parse(localStorage.getItem("carritoPrueba"));
 
 function agregarProducto(prod, precioProd) {
+    /* Crea el objeto para agregarlo al localstorage */
     let registro = {
         id: prod,
         cantidad: 1,
@@ -25,7 +32,7 @@ function agregarProducto(prod, precioProd) {
 }
 
 $("#btn-carrito").click(() => {
-    let carritoPrueba = JSON.parse(localStorage.getItem("carritoPrueba"));//Transforma el JSON a objeto javascript
+    let carritoPrueba = JSON.parse(localStorage.getItem("carritoPrueba"));
     $.ajax({
         data: { carritoPrueba },
         url: "cargarProductos.php",

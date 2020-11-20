@@ -6,6 +6,14 @@
     @link https://github.com/Arian023
 -->
 <html lang="es">
+<!-- 
+    Programación Web Dinámica 2020
+    Trabajo práctico de investigacion
+    @author Arian Acevedo
+    @author Maximiliano Villalba
+    @link https://github.com/Arian023
+    @link https://github.com/MaximilianoVillalba
+-->
 
 <head>
     <title>MercadoPago</title>
